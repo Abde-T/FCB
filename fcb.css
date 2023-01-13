@@ -1,1 +1,258 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600;700&display=swap');
 
+body{
+  background-image: repeating-linear-gradient(90deg, #040335 , #004D98 ,#DB0030);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  
+  width: 100%;
+}
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo{
+    height: 100px;
+    width: 100px;
+}
+ul{
+    display: flex;
+    
+}
+li{
+    margin: 10px 20px;
+    list-style: none;   
+}
+a{
+    color: #EDBB00;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 900;
+}
+header{
+    display: flex;
+    justify-content: space-around;
+}
+
+h1{
+    color: #EDBB00;
+    font-weight: 900;
+    font-size: 50px;
+    text-align: center;
+}
+h3{
+    margin-top: -20px;
+    text-align: center;
+    color: #DB0030;
+    font-weight: 900;
+    font-size: 20px;
+}
+p{
+    text-align: center;
+    color: aliceblue;
+    font-weight: 400;
+    margin: 0 80px 30px ;
+}
+.Home{
+    display: flex;
+    flex-direction: column;
+}
+
+.home__pageimg{
+    box-shadow: 0 0 100px black;
+    border-radius: 10px;
+    margin: 0 50px 0 0;
+}
+.first__button{
+    background-color: #EDBB00;
+    border-radius: 10px;
+    border: none;
+   
+}
+.home__button{
+    display: flex;
+    justify-content: center;
+}
+.camp__nou__link{
+    font-size: 20px;
+    color: aliceblue;
+}
+
+
+#Messi {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around ;
+    margin: 100px 80px 0 100px;
+    box-shadow: 0 0 100px black;
+    border-radius: 10px;
+
+}
+
+
+.Messi__description{
+    background-image: url(./assets/Untitled-1.png);
+    height: 800px;
+    width: 100%;
+    background-size: 100% 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 100px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;    
+}
+h4{
+    color: goldenrod;
+    margin-left: 150px ;
+}
+.Messi_desc{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.Messi_p{
+    color: goldenrod;
+    text-align: left;
+    margin: 0 230px 0 50px;
+}
+.Messi_p1{
+    color: goldenrod;
+    text-align: right;
+    margin: 0 50px 0 200px;
+}
+
+#Neymar { 
+    margin: 100px 80px 80px 100px;
+}
+.Neymar__description{
+    display: flex;
+    flex-direction: row;
+}
+.Ney{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.Ney__img{
+    box-shadow: 0 0 100px black;
+    border-radius: 10px;
+    width: 100%;
+}
+
+.Images{
+    padding: 2rem;
+    
+    
+}
+.slidder__wrapper{
+    position: relative;
+    max-width: 100%;
+    margin: 0 100px 20px 100px;
+
+}
+.slider{
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    box-shadow: 0 1.5rem 3rem -0.75rem hsl(0, 0%, 0%, 0.25);
+    border-radius: 0.5rem;
+
+}
+.slider img{
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+}
+.slider-nav{
+    display: flex;
+    column-gap: 1rem;
+    position: absolute;
+    bottom: 1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+}
+.slider-nav a{
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background-color:white;
+    opacity: 0.75;
+    transition: opacity ease 250ms;
+}
+.slider-nav a:hover{
+    opacity: 1;
+}
+
+@media (max-width: 1372px) {
+    .home__pageimg{
+        width: 600px;
+        margin-right: 50px;
+    }
+    .Messi__description{
+        height: 600px;
+    }
+
+
+}
+
+
+@media (max-width: 1041px) {
+    .home__pageimg{
+        height: 270px;
+        width: 400px;
+        margin-right: 50px;
+    }
+    .Messi__description{
+        height: 400px;
+    }
+    
+   
+
+}
+@media (max-width: 850px) {
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    .home__pageimg{
+        height: 270px;
+        width: 400px;
+        margin: 24px;
+    }
+    .image__phone{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+    #Messi {
+        margin: 20px 40px 0 40px;
+    }
+
+    .Messi__description{
+        margin: -20px 0 0 0;
+        height: 200px;
+    }
+    .Neymar__description{
+        display: flex;
+        flex-direction: column;
+    }
+    .Ney__img{
+        margin: 0 200px 30px -55px;
+        height: 300px;
+        width: 400px;
+    }
+    .Ney{
+        margin: 10px -80px 0 -80px;
+    }
+
+}
